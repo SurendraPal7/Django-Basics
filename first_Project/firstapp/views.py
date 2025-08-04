@@ -14,3 +14,4 @@ def findEvenOdd(request):
         return HttpResponse("Even Number")
     else:
         return HttpResponse("odd number")
+
