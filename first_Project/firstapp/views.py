@@ -26,3 +26,26 @@ def getData(request, id):
         return JsonResponse(data)
     else:
         return JsonResponse({"error": "Data not found"}, status=404)
+    
+
+def getJsonData(request):
+    data = {"name": "john","course": "django"}
+    return JsonResponse(data)
+
+def jsonData(request,data):
+    d={
+        "name":"cathy",
+        "course":["Django","Python","PHP","Laravel"],
+        "city":"Delhi",
+    }
+    
+    if data in d:
+        return JsonResponse({data:d[data]})
+    else:
+        return JsonResponse({"error": "Data not found"}, status=404)
+        
+     
+        
+        
+    
+    
