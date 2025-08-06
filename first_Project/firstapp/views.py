@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 def hello(request):
     return HttpResponse("Hello world!")
-     
+                                                     
      
 def findEvenOdd(request):
     a=10
