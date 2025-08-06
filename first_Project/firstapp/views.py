@@ -17,7 +17,7 @@ def findEvenOdd(request):
     else:
         return HttpResponse("odd number")
 
-
+# getting data from external API
 def getData(request, id):
     url = f"https://jsonplaceholder.typicode.com/posts/{id}"
     response = requests.get(url)
