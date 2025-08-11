@@ -55,3 +55,7 @@ def greet(request,name):
 
 def siteData(requet,id):
     return HttpResponse(f"site data is {id}")
+
+
+def getData(request,c):
+    return HttpResponse(f"site data is {c}")

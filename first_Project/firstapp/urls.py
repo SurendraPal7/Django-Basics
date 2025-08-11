@@ -14,6 +14,8 @@ urlpatterns = [
     path("add/<int:a>/<int:b>/", views.addtion),
     path("greet/<str:name>/",views.greet),
     path("site/<int:id>/", views.siteData),
+        path("site/<c>/", views.getData),
+
     
     
    
