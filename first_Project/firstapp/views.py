@@ -47,5 +47,8 @@ def jsonData(request,data):
      
         
         
-    
-    
+def addtion(request,a,b):
+    return HttpResponse(f"addition of a and b is :{a+b}")
+
+def greet(request,name):
+    return HttpResponse(f"Hello {name}")
