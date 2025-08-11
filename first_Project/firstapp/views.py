@@ -62,3 +62,6 @@ def getData(request,c):
 
 def userName(request,username):
     return HttpResponse(f"Welcome, {username}")
+
+def report(request, date):
+    return HttpResponse(f"Report for {date} generated successfully.")

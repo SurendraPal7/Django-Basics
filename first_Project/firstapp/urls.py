@@ -17,6 +17,6 @@ urlpatterns = [
     path("site/<c>/", views.getData),  #it will take any string/number as input and return the data 
     re_path(r'^user/(?P<username>[a-zA-Z0-9_#@]+)/$', views.userName),  # Example for regex pa
     
-    
+re_path(r'^report/(?P<date>\d{4}-\d{2}-\d{2})/$', views.report),  # Example for regex path    
    
 ]
