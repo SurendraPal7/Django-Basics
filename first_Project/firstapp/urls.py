@@ -18,5 +18,7 @@ urlpatterns = [
     re_path(r'^user/(?P<username>[a-zA-Z0-9_#@]+)/$', views.userName),  # Example for regex pa
     
 re_path(r'^report/(?P<date>\d{4}-\d{2}-\d{2})/$', views.report),  # Example for regex path    
+# ramanpal7228@gmail.com
+re_path(r'^email/(?P<email>[a-z0-9.]+@[a-z]+\.[a-z]{2,})/$', views.getEmail),  # Example for regex path
    
 ]

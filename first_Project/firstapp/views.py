@@ -65,3 +65,5 @@ def userName(request,username):
 
 def report(request, date):
     return HttpResponse(f"Report for {date} generated successfully.")
+def getEmail(request, email):
+    return HttpResponse(f"Email received: {email}")
