@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from firstapp import views
 
 urlpatterns = [
@@ -15,7 +15,7 @@ urlpatterns = [
     path("greet/<str:name>/",views.greet),
     path("site/<int:id>/", views.siteData),
     path("site/<c>/", views.getData),  #it will take any string/number as input and return the data 
-
+    re_path(r'^user/(?P<username>[a-zA-Z0-9_#@]+)/$', views.userName),  # Example for regex pa
     
     
    

@@ -2,7 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import requests
 from django.http import JsonResponse
-
 # Create your views here.
 
 
@@ -59,3 +58,7 @@ def siteData(requet,id):
 
 def getData(request,c):
     return HttpResponse(f"site data is {c}")
+
+
+def userName(request,username):
+    return HttpResponse(f"Welcome, {username}")
