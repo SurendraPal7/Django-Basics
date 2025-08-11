@@ -52,3 +52,6 @@ def addtion(request,a,b):
 
 def greet(request,name):
     return HttpResponse(f"Hello {name}")
+
+def siteData(requet,id):
+    return HttpResponse(f"site data is {id}")
