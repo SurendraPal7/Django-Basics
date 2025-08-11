@@ -14,7 +14,7 @@ urlpatterns = [
     path("add/<int:a>/<int:b>/", views.addtion),
     path("greet/<str:name>/",views.greet),
     path("site/<int:id>/", views.siteData),
-        path("site/<c>/", views.getData),
+    path("site/<c>/", views.getData),  #it will take any string/number as input and return the data 
 
     
     
