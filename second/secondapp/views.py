@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def index(request):
     return render(request,'myapp/index.html')
 def index1(request):
-    return render(request,'myapp/index1.html')
+    return render(request,'myapp/index2.html')
 
