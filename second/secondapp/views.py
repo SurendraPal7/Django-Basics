@@ -28,6 +28,6 @@ def filters(request):
 def hel(request):
     context={
         "message":"Django",
-        "marks":86
+        "marks":65
     }
     return render(request,'myapp/hello.html',context)
