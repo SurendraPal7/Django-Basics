@@ -6,4 +6,6 @@ urlpatterns = [
     path("table",views.index1),
     path("fruits",views.fruit_list),
     path("resume",views.resume),
+    path("filters/",views.filters),
+    path("hel/",views.hel),
 ]
