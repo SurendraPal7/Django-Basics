@@ -8,14 +8,13 @@
     <h1>Filters</h1>
     <p>Hello Welcome to {{message | upper}}!</p>
     {% if marks > 90 %}
-    <p>Congratulations! You have scored an A grade.</p>
+    <p style="color:green">Congratulations! You have scored an A grade.</p>
     {% elif marks > 75 %}
-    <p>Well done! You have scored a B grade.</p>
+    <p style="color:blue">Well done! You have scored a B grade.</p>
     {% elif marks > 60 %}
-    <p>Good effort! You have scored a C grade.</p>
+    <p style="color:orange">Good effort! You have scored a C grade.</p>
     {% else %}
-    <p>Keep trying! You need to improve your score.</p>
-    {% endif %}
+<p style="color:red;">Keep trying! You need to improve your score.</p>    {% endif %}
 
  </body>
 </html>
