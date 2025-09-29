@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to first template</title>
+  </head>
+  <body>
+    <nav>
+        {% comment %} {% comment %} <a href="{% url home %}">Home</a>
+        <a href="{% url about %}">About</a>
+        <a href="{% url contact %}">Contact</a> {% endcomment %} 
+
+    </naav>
+    <form method="post">
+        {% csrf_token %}
+        <h2>Contact Form</h2>
+    Name: <input type="text" name="name"><br>
+        Phone: <input type="text" name="phone"><br>
+
+    Email: <input type="email" name="email"><br>
+    Age: <input type="number" name="age"><br>
+    Message: <textarea name="message"></textarea><br>
+    <input type="submit" value="Submit">
+
+    
+    </form>
+
+    <h3>Submitted data</h3>
+    <p>Name: {{name}}</p>
+    <p>Email: {{email}}</p>
+    <p>Age:{{age}}</p>
+    <p>Message: {{message}}</p>
+ </body>
+</html>
